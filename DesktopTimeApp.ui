@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>981</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>SizeVerCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-3</number>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>981</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Add</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/add-439817.ico</normaloff>icon/add-439817.ico</iconset>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Remove</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/remove-667650.ico</normaloff>icon/remove-667650.ico</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Edit</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/editing-edit-343335.ico</normaloff>icon/editing-edit-343335.ico</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Clone</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/repo-clone-24524.ico</normaloff>icon/repo-clone-24524.ico</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>981</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionTimer"/>
+    <addaction name="actionStopWatch"/>
+    <addaction name="actionALarm"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/OpenFolderIcon.ico</normaloff>icon/OpenFolderIcon.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="statusTip">
+    <string>Open A File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/file-save-517273.ico</normaloff>icon/file-save-517273.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save a File</string>
+   </property>
+   <property name="statusTip">
+    <string>Save A File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/folder-hide-122174.ico</normaloff>icon/folder-hide-122174.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Hide The Application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionTimer">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/timer-590913.ico</normaloff>icon/timer-590913.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Timer</string>
+   </property>
+   <property name="statusTip">
+    <string>Set a Timer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionStopWatch">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/stopwatch-616652.ico</normaloff>icon/stopwatch-616652.ico</iconset>
+   </property>
+   <property name="text">
+    <string>StopWatch</string>
+   </property>
+   <property name="statusTip">
+    <string>Start A StopWatch</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Alarm</string>
+   </property>
+  </action>
+  <action name="actionALarm">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/alarm-636561.ico</normaloff>icon/alarm-636561.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Alarm</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
